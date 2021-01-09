@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <div class="alert alert-warning" role="alert">
+    {{ error_statement }}
+  </div>
+  <h1> Fill the form!..</h1>
+
+  <form action="/result" method="POST">
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Age</label>
+      <input name='age' value="{{age}}" type="integer" class="form-control" id="exampleFormControlInput1" placeholder="">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Gender</label>
+      <select name='gender' class="form-control" id="exampleFormControlSelect1">
+        <option>Male</option>
+        <option>Female</option>
+        <option>Apache Combat Helicopter</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Education</label>
+      <select name='education' value="{{education}}" class="form-control" id="exampleFormControlSelect1">
+        <option>Left school before 16 years</option>
+        <option>Left school at 16 years</option>
+        <option>Left school at 17 years</option>
+        <option>Left school at 18 years</option>
+        <option>Some college or university, no certificate or degree</option>
+        <option>Professional certificate/ diploma</option>
+        <option>Masters degree</option>
+        <option>Doctorate degree</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Ethnicity</label>
+      <select name='ethnicity' value="{{ethnicity}}" class="form-control" id="exampleFormControlSelect1">
+        <option>Black</option>
+        <option>Asian</option>
+        <option>White</option>
+        <option>Mixed-White/Black</option>
+        <option>Mixed-White/Asian</option>
+        <option>Mixed-Black/Asian</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="formControlRange">Neuroticism</label>
+      <input name="neuroticism" value="{{neuroticism}}" type="range" class="form-control-range" id="formControlRange">
+    </div> 
+    <div class="form-group">
+      <label for="formControlRange">Extraversion</label>
+      <input name="extraversion" value="{{extraversion}}" type="range" class="form-control-range" id="formControlRange">
+    </div> 
+    <div class="form-group">
+      <label for="formControlRange">Openness to experience</label>
+      <input name="opennesstoexperience" value="{{opennesstoexperience}}" type="range" class="form-control-range" id="formControlRange">
+    </div> 
+    <div class="form-group">
+      <label for="formControlRange">Agreeableness</label>
+      <input name="agreeableness" value="{{agreeableness}}" type="range" class="form-control-range" id="formControlRange">
+    </div> 
+    <div class="form-group">
+      <label for="formControlRange">Conscientiousness</label>
+      <input name="conscientiousness" value="{{conscientiousness}}" type="range" class="form-control-range" id="formControlRange">
+    </div> 
+    <div class="form-group">
+      <label for="formControlRange">Impulsiveness</label>
+      <input name="impulsiveness" value="{{impulsiveness}}" type="range" class="form-control-range" id="formControlRange">
+    </div> 
+    <div class="form-group">
+      <label for="formControlRange">Sensation seeking</label>
+      <input name="sensationseeking" value="{{sensationseeking}}" type="range" class="form-control-range" id="formControlRange">
+    </div> 
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+      
+  </form>
+</div>
+
+{% endblock %}
