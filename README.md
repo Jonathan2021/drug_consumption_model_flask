@@ -16,6 +16,8 @@ Steps and comments in **Drug consumption.ipynb** notebook
 
 ### Model building
 
+Building a multilabel user / non-user classifier for drug consumption based on demographic and personality traits.
+
 Steps and comments in **Drug consumption.ipynb** notebook
 
 ## Web app
